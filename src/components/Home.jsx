@@ -14,7 +14,7 @@ const Home = () => {
     const letra = e.target.value;
     try {
       const result = await axios.get(
-        `http://localhost:3001/iecho?text=${letra}`
+        `/iecho?text=${letra}`
       );
       let array = search.result;
       array.unshift(result.data.text);
